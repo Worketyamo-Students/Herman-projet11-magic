@@ -7,3 +7,6 @@ function onToggleMenu(e){
     navLinks1.classList.toggle( 'left-[0]')
     navLinks.classList.toggle('left-[50%]')
 }
+function favorit(e){
+    e.name = e.name === 'heart-outline' ? 'heart' :'heart-outline'
+}
