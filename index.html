@@ -24,15 +24,15 @@
 </head>
 <body > 
  <header class="py-[.5rem]">
-<nav class="flex items-center justify-between px-[3rem] ">
+<nav class="flex sm:flex items-center justify-between px-[3rem] ">
     <div class=""><a href="logo"><img src="./images/Logo.png" alt="#"></a></div>
     
-    <div class="nav-links absolute lg:static lg:min-h-fit  min-h-[50vh] left-[-100%] top-[8%] w-[50vw] flex-col items-center  px-[2rem] backdrop-blur-[.3rem] duration-500">
+    <div class="nav-links absolute sm:static sm:min-h-fit sm:flex sm:flex-row sm:items-center sm:gap-[2rem] min-h-[50vh] left-[-100%] top-[8%] w-[50vw] sm:w-full flex-col items-center  px-[2rem] backdrop-blur-[.3rem] duration-500">
         <div class="h-[2rem] w-[10em] bg-fond flex items-center text-second gap-[.2rem] px-[.5rem] ">
             <ion-icon name="search-outline"></ion-icon> 
-            <input type="text" placeholder="Search" class="bg-fond outline-none w-[5rem]">
+            <input type="text" placeholder="Search" class="bg-fond outline-none w-[2rem]">
         </div>
-        <ul class="flex lg:flex-row flex-col text-second  lg:gap-[1rem] py-[1rem] gap-[1rem]">
+        <ul class="flex sm:flex-row flex-col text-second  sm:gap-[1rem] py-[1rem] gap-[1rem]">
             <li>
                 <a class="hover:text-black text-[1.1rem]" href="Home">Home</a>
             </li>
@@ -54,35 +54,38 @@
     </div>
    
    
-    <div class="flex lg:hidden text-[2rem] cursor-pointer  "><ion-icon onclick="onToggleMenu(this)" name="menu"></ion-icon></div>
+    <div class="flex sm:hidden text-[2rem] cursor-pointer animate-spin"><ion-icon onclick="onToggleMenu(this)" name="menu"></ion-icon></div>
 </nav>
-<section class="nav-links1 absolute lg:static lg:min-h-fit top-[6%] left-[100%] min-h-[50vh] text-second lg:flex lg:items-center my-[.5rem] bg-black  w-[50%] lg:w-full duration-500">
-    <a href="phones" class="flex items-center text-[.7rem] border-r-[.07rem] border-second lg:px-[2rem] py-[1rem] justify-center text-[1.1rem] hover:text-primary">
+<section class="nav-links1 absolute sm:static sm:gap-[1rem] sm:justify-center   sm:min-h-fit top-[6%] left-[100%] min-h-[50vh] text-second sm:flex sm:items-center my-[.5rem] bg-black  w-[50%] sm:w-full duration-500">
+    <a href="phones" class="flex items-center text-[.7rem] sm:px-[1rem] sm:text-[.8rem] border-r-[.07rem] border-second lg:px-[2rem] py-[1rem] justify-center text-[1.1rem] hover:text-primary">
         <ion-icon name="phone-portrait-outline"></ion-icon> <p>Phones</p>
     </a>
-    <a href="phones" class="flex items-center text-[.7rem] border-r-[.07rem] border-second lg:px-[2rem] py-[1rem] justify-center text-[1.1rem] gap-[.1rem] hover:text-primary">
+    <a href="phones" class="flex items-center text-[.7rem] sm:px-[1rem] sm:text-[.8rem] border-r-[.07rem] border-second lg:px-[2rem] py-[1rem] justify-center text-[1.1rem] gap-[.1rem] hover:text-primary">
         <ion-icon name="desktop-outline"></ion-icon> <p>computer</p>
     </a>
-    <a href="phones" class="flex items-center text-[.7rem] border-r-[.07rem] border-second lg:px-[2rem] py-[1rem] justify-center text-[1.1rem] gap-[.1rem] hover:text-primary">
+    <a href="phones" class="flex items-center text-[.7rem] sm:px-[1rem] sm:text-[.8rem] border-r-[.07rem] border-second lg:px-[2rem] py-[1rem] justify-center text-[1.1rem] gap-[.1rem] hover:text-primary">
         <ion-icon name="game-controller-outline"></ion-icon> <p>smartwacthes</p>
     </a>
-    <a href="phones" class="flex items-center text-[.7rem] border-r-[.07rem] border-second lg:px-[2rem] py-[1rem] justify-center text-[1.1rem] gap-[.1rem] hover:text-primary">
+    <a href="phones" class="flex items-center text-[.7rem] sm:px-[1rem] sm:text-[.8rem] border-r-[.07rem] border-second lg:px-[2rem] py-[1rem] justify-center text-[1.1rem] gap-[.1rem] hover:text-primary">
         <ion-icon name="camera-outline"></ion-icon> <p>camera</p>
     </a>
-    <a href="phones" class="flex items-center text-[.7rem] border-r-[.07rem] border-second lg:px-[2rem] py-[1rem] justify-center text-[1.1rem] gap-[.1rem] hover:text-primary">
+    <a href="phones" class="flex items-center text-[.7rem] sm:px-[1rem] sm:text-[.8rem] border-r-[.07rem] border-second lg:px-[2rem] py-[1rem] justify-center text-[1.1rem] gap-[.1rem] hover:text-primary">
         <ion-icon name="headset-outline"></ion-icon> <p>Headphones</p>
     </a>
-    <a href="phones" class="flex items-center text-[.7rem] border-r-[.07rem] border-second lg:px-[2rem] py-[1rem] justify-center text-[1.1rem] gap-[.1rem] hover:text-primary">
+    <a href="phones" class="flex items-center text-[.7rem] sm:px-[1rem] sm:text-[.8rem] border-r-[.07rem] border-second lg:px-[2rem] py-[1rem] justify-center text-[1.1rem] gap-[.1rem] hover:text-primary">
         <ion-icon name="game-controller-outline"></ion-icon> <p>gaming</p>
     </a>
 </section>
  </header>
- <section class="flex-col  justify-center w-full bg-[#211C24]">
+ <section class="flex-col flex sm:flex-row justify-center w-full bg-[#211C24] px-[2rem]">
     <div class="w-[23rem] h-[34rem] gap-[1.6rem] font-[Figtree] text-center flex-col ">
         <p class="text-[2.5rem] text-second">Pro.Beyond.</p>
-        <p class="text-primary text-[5.2rem]">IPhone 14 Pro</p>
+        <p class="flex">
+            <p class="text-primary text-[5.2rem]">IPhone 14</p>
+            <p class="text-primary text-[5.2rem] font-bold">pro</p>
+        </p>
         <p class="text-[1.9rem] text-second">Created to change everything for the better. For everyone </p>
-        <button class="px-[2rem] py-[.5rem] border-[.1rem] rounded text-primary text-[1.3rem]"> Shop Now</button>
+        <button class="px-[2rem] py-[.5rem] my-[1rem] border-[.1rem] rounded text-primary text-[1.3rem]"> Shop Now</button>
 
     </div>
     <div ><img src="/images/phonemobile.png" alt="#"></div>
@@ -90,17 +93,17 @@
  <section class="px-[1rem] font-[Figtree] xm:flex">
     <div class="xm:grid xm:grid-col-2 lg:flex-1">
         <div class="text-center bg-[#EDEDED] xm:col-span-2">
-            <img src="/images/apple airmobil.png" alt="#">
+            <img class="px-[4rem]" src="/images/apple airmobil.png" alt="#">
             <p class="text-black text-[3rem]">Apple  AirPods Max</p>
             <p class="text-second text-[1.1rem]">Computational audio. Listen, it's powerful</p>
         </div>
         <div class="text-center bg-[#353535]">
-            <img src="/images/appel visionmobil.png" alt="">
+            <img class="px-[4rem]" src="/images/appel visionmobil.png" alt="">
             <p class="text-primary text-[3rem]">Apple Vision Pro</p>
             <p class="text-primary text-[1.1rem]">An immersive way to experience entertainment</p>
         </div>
         <div class="text-center bg-[#EDEDED]">
-            <img src="/images/PlayStationmobile.png" alt="#">
+            <img class="px-[4rem]" src="/images/PlayStationmobile.png" alt="#">
             <p class="text-black text-[3rem]">Playstation 5</p>
             <p class="text-second text-[1.1rem]">Incredibly powerful CPUs, GPUs, and an SSD with integrated I/O will redefine your PlayStation experience.</p>
         </div>
@@ -115,45 +118,45 @@
         </div>
     </div>
  </section>
- <section class="px-[1rem]">
-    <div class="flex justify-between items-center">
+ <section class="px-[1rem] py-[2rem]">
+    <div class="flex justify-between items-center py-[1rem]">
         <p class="text-[2rem]">Browse By Category</p>
         <div class="text-[2rem] ">
-            <button type="button"><ion-icon class="hover:bg-fond" name="chevron-back"></ion-icon></button>
+        <button type="button"><ion-icon class="hover:bg-fond" name="chevron-back"></ion-icon></button>
         <button><ion-icon name="chevron-forward"></ion-icon></button>
         </div>
     </div>
-    <div class="flex gap-[2.8rem]  flex-wrap">
-        <a href="phones" class="flex items-center text-[.7rem] bg-[#EDEDED]  h-[12rem] flex-col w-[11rem]  py-[1rem] justify-center text-[1.1rem] hover:text-nav">
+    <div class="flex gap-[2.8rem]  flex-wrap text-[2rem]">
+        <a href="phones" class="flex items-center text-[1.8rem] bg-[#EDEDED]  h-[12rem] flex-col w-[11rem]  py-[1rem] justify-center text-[1.1rem] hover:text-nav">
             <ion-icon name="phone-portrait-outline"></ion-icon> <p>Phones</p>
         </a>
-        <a href="phones" class="flex items-center text-[.7rem] bg-[#EDEDED]  h-[12rem] flex-col w-[11rem]  py-[1rem] justify-center text-[1.1rem] hover:text-nav">
+        <a href="phones" class="flex items-center text-[1.8rem] bg-[#EDEDED]  h-[12rem] flex-col w-[11rem]  py-[1rem] justify-center text-[1.1rem] hover:text-nav">
             <ion-icon name="desktop-outline"></ion-icon> <p>computer</p>
         </a>
-        <a href="phones" class="flex items-center text-[.7rem] bg-[#EDEDED]  h-[12rem] flex-col w-[11rem]  py-[1rem] justify-center text-[1.1rem] hover:text-nav">
+        <a href="phones" class="flex items-center text-[1.8rem] bg-[#EDEDED]  h-[12rem] flex-col w-[11rem]  py-[1rem] justify-center text-[1.1rem] hover:text-nav">
             <ion-icon name="game-controller-outline"></ion-icon> <p>smartwacthes</p>
         </a>
-        <a href="phones" class="flex items-center text-[.7rem] bg-[#EDEDED]  h-[12rem] flex-col w-[11rem]  py-[1rem] justify-center text-[1.1rem] hover:text-nav">
+        <a href="phones" class="flex items-center text-[1.8rem] bg-[#EDEDED]  h-[12rem] flex-col w-[11rem]  py-[1rem] justify-center text-[1.1rem] hover:text-nav">
             <ion-icon name="camera-outline"></ion-icon> <p>camera</p>
         </a>
-        <a href="phones" class="flex items-center text-[.7rem] bg-[#EDEDED]  h-[12rem] flex-col w-[11rem]  py-[1rem] justify-center text-[1.1rem] hover:text-nav">
+        <a href="phones" class="flex items-center text-[1.8rem] bg-[#EDEDED]  h-[12rem] flex-col w-[11rem]  py-[1rem] justify-center text-[1.1rem] hover:text-nav">
             <ion-icon name="headset-outline"></ion-icon> <p>Headphones</p>
         </a>
-        <a href="phones" class="flex items-center text-[.7rem] bg-[#EDEDED]  h-[12rem] flex-col w-[11rem]  py-[1rem] justify-center text-[1.1rem] hover:text-nav">
+        <a href="phones" class="flex items-center text-[1.8rem] bg-[#EDEDED]  h-[12rem] flex-col w-[11rem]  py-[1rem] justify-center text-[1.1rem] hover:text-nav">
             <ion-icon name="game-controller-outline"></ion-icon> <p>gaming</p>
         </a> 
     </div>
  </section>
- <section>
-    <div class="text-[#BBBB]  text-[1.3rem] flex justify-between">
+ <section class="px-[2rem] py-[3rem]">
+    <div class="text-[#BBBB]  text-[1.1rem] flex justify-between py-[1rem]">
         <p class="hover:text-black hover:underline ">New Arrival</p>
         <p class="hover:text-black hover:underline">Bestseller</p>
         <p class="hover:text-black hover:underline">Featured Products</p>
     </div>
     <div class="flex-wrap flex gap-[2rem]">
-        <div class="flex-col items-center bg-[#F7F7F7] rounded text-center font-bold w-[10rem] py-[1rem]">
+        <div class="flex-col items-center bg-[#F7F7F7] rounded text-center font-bold w-[10rem] py-[1rem] px-[1rem]">
             <div class="text-[1.5rem] text-second text-end"> <ion-icon onclick="favorit(this)" name="heart-outline"></ion-icon></div>
-            <div><img src="/images/Iphone 14 pro 1.png" alt=""></div>
+            <div><img class="px-[1rem]" src="/images/Iphone 14 pro 1.png" alt=""></div>
             <div>Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)
                 </div>
                 <div class="text-[1.2rem]">$900</div>
@@ -161,7 +164,7 @@
         </div>
         <div class="flex-col items-center bg-[#F7F7F7] rounded text-center font-bold w-[10rem] py-[1rem]">
             <div class="text-[1.5rem] text-second text-end"> <ion-icon onclick="favorit(this)" name="heart-outline"></ion-icon></div>
-            <div><img src="/images/camera 6K.png" alt=""></div>
+            <div><img class="px-[1rem]" src="/images/camera 6K.png" alt=""></div>
             <div>Blackmagic Pocket Cinema Camera 6k
                 </div>
                 <div class="text-[1.2rem]">$2535</div>
@@ -169,7 +172,7 @@
         </div>
         <div class="flex-col items-center bg-[#F7F7F7] rounded text-center font-bold w-[10rem] py-[1rem]">
             <div class="text-[1.5rem] text-second text-end"> <ion-icon onclick="favorit(this)" name="heart-outline"></ion-icon></div>
-            <div><img src="/images/Applewatch.png" alt=""></div>
+            <div><img class="px-[1rem]" src="/images/Applewatch.png" alt=""></div>
             <div>Apple Watch Series 9 GPS 41mm Starlight Aluminium Case
                 </div>
                 <div class="text-[1.2rem]">$399</div>
@@ -177,7 +180,7 @@
         </div>
         <div class="flex-col items-center bg-[#F7F7F7] rounded text-center font-bold w-[10rem] py-[1rem]">
             <div class="text-[1.5rem] text-second text-end"> <ion-icon onclick="favorit(this)" name="heart-outline"></ion-icon></div>
-            <div><img src="/images/aipod.png" alt=""></div>
+            <div><img class="px-[1rem]" src="/images/aipod.png" alt=""></div>
             <div>AirPods Max Silver
                 </div>
                 <div class="text-[1.2rem]">$549</div>
@@ -185,7 +188,7 @@
         </div>
         <div class="flex-col items-center bg-[#F7F7F7] rounded text-center font-bold w-[10rem] py-[1rem]">
             <div class="text-[1.5rem] text-second text-end"> <ion-icon onclick="favorit(this)" name="heart-outline"></ion-icon></div>
-            <div><img src="/images/watch6.png" alt=""></div>
+            <div><img class="px-[1rem]" src="/images/watch6.png" alt=""></div>
             <div>Samsung Galaxy Watch6 Classic 47mm Black
                 </div>
                 <div class="text-[1.2rem]">$339</div>
@@ -193,7 +196,7 @@
         </div>
         <div class="flex-col items-center bg-[#F7F7F7] rounded text-center font-bold w-[10rem] py-[1rem]">
             <div class="text-[1.5rem] text-second text-end"> <ion-icon onclick="favorit(this)" name="heart-outline"></ion-icon></div>
-            <div><img src="/images/fold.png" alt=""></div>
+            <div><img class="px-[1rem]" src="/images/fold.png" alt=""></div>
             <div>Galaxy Z Fold5 Unlocked | 256GB | Phantom Black
                 </div>
                 <div class="text-[1.2rem]">$1799</div>
@@ -201,7 +204,7 @@
         </div>
         <div class="flex-col items-center bg-[#F7F7F7] rounded text-center font-bold w-[10rem] py-[1rem]">
             <div class="text-[1.5rem] text-second text-end"> <ion-icon onclick="favorit(this)" name="heart-outline"></ion-icon></div>
-            <div><img src="/images/graphite.png" alt=""></div>
+            <div><img class="px-[1rem]" src="/images/graphite.png" alt=""></div>
             <div>Galaxy Buds FE
                 Graphite
                 </div>
@@ -210,7 +213,7 @@
         </div>
         <div class="flex-col items-center bg-[#F7F7F7] rounded text-center font-bold w-[10rem] py-[1rem]">
             <div class="text-[1.5rem] text-second text-end"> <ion-icon onclick="favorit(this)" name="heart-outline"></ion-icon></div>
-            <div><img src="/images/ipad.png" alt=""></div>
+            <div><img class="px-[1rem]" src="/images/ipad.png" alt=""></div>
             <div>Apple iPad 9 10.2" 64GB Wi-Fi Silver (MK2L3) 2021
                 </div>
                 <div class="text-[1.2rem]">$398</div>
@@ -258,21 +261,21 @@
     </div>
 </section>
 <swiper-container class="mySwiper" pagination="true" pagination-dynamic-bullets="true">
-    <swiper-slide><div class="">
+    <swiper-slide><div class=" bg-[#F9F9F9]">
         <div class="h-[20rem]">
             <img class="w-full " src="/images/popular1.png" alt="#">
             <img class=" relative top-[-30rem] left-[10rem] " src="/images/populare2.png" alt="#">
         </div>
        
-        <div class="text-cener">
+        <div class="text-center px-[1rem]">
             <p class="text-[3rem]">Popular Products</p>
         <p class="text-[1.1rem] text-second">iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.</p>
          <button class="px-[3rem] py-[.8rem] text-[1.3rem] border-black border-[.1rem] rounded font-bold ">Shop Now</button>
         </div>
     </div></swiper-slide>
-    <swiper-slide><div class="">
+    <swiper-slide><div class="bg-[#F9F9F9]">
         <img class="w-full h-[20rem]" src="/images/ipadpro.png" alt="#">
-        <div class="text-center">
+        <div class="text-center px-[1rem]">
             <p class="text-[4rem]">Ipad Pro</p>
         <p class="text-[1.1rem] text-second">iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.</p>
          <button class="px-[3rem] py-[.8rem] text-[1.3rem] border-black border-[.1rem] rounded font-bold ">Shop Now</button>
@@ -296,6 +299,98 @@
         </div>
     </div></swiper-slide>
 </swiper-container>
+<section class="px-[1rem] py-[1rem]">
+    <p class="text-[2rem] py-[2rem]">Discounts up to -50%</p>
+    <div class="flex-wrap flex gap-[2rem] px-[1rem]">
+        <div class="flex-col items-center bg-[#F7F7F7] rounded text-center font-bold w-[10rem] py-[1rem]">
+            <div class="text-[1.5rem] text-second text-end"> <ion-icon onclick="favorit(this)" name="heart-outline"></ion-icon></div>
+            <div class="justify-center"><img class="px-[2rem]" src="/images/Iphone 14 pro gold.png" alt=""></div>
+            <div>Apple iPhone 14 Pro Max 500GB Gold (MQ9T3RX/A)</div>
+                <div class="text-[1.2rem]">$900</div>
+            <button class="bg-black px-[2rem] py-[.5rem] text-center text-primary rounded">Buy Now</button>
+        </div>
+        <div class="flex-col items-center bg-[#F7F7F7] rounded text-center font-bold w-[10rem] py-[1rem]">
+            <div class="text-[1.5rem] text-second text-end"> <ion-icon onclick="favorit(this)" name="heart-outline"></ion-icon></div>
+            <div><img class="px-[2rem]" src="/images/aipod.png" alt=""></div>
+            <div>AirPods Max Silver
+
+                </div>
+                <div class="text-[1.2rem]">$2535</div>
+            <button class="bg-black px-[2rem] py-[.5rem] text-center text-primary rounded">Buy Now</button>
+        </div>
+        <div class="flex-col items-center bg-[#F7F7F7] rounded text-center font-bold w-[10rem] py-[1rem]">
+            <div class="text-[1.5rem] text-second text-end"> <ion-icon onclick="favorit(this)" name="heart-outline"></ion-icon></div>
+            <div><img class="px-[2rem]" src="/images/appelwatch.png" alt=""></div>
+            <div>Apple Watch Series 9 GPS 41mm Starlight Aluminium Case
+
+                </div>
+                <div class="text-[1.2rem]">$399</div>
+            <button class="bg-black px-[2rem] py-[.5rem] text-center text-primary rounded">Buy Now</button>
+        </div>
+        <div class="flex-col items-center bg-[#F7F7F7] rounded text-center font-bold w-[10rem] py-[1rem]">
+            <div class="text-[1.5rem] text-second text-end"> <ion-icon onclick="favorit(this)" name="heart-outline"></ion-icon></div>
+            <div><img class="px-[2rem]" src="/images/Iphone 14 pro.png" alt=""></div>
+            <div>Apple iPhone 14 Pro 1TB Gold (MQ2V3)
+
+                </div>
+                <div class="text-[1.2rem]">$549</div>
+            <button class="bg-black px-[2rem] py-[.5rem] text-center text-primary rounded">Buy Now</button>
+        </div>
+        
+    </div>
+</section>
+<section class="bg-[#2E2E2E] w-full h-[40rem]  flex items-center justify-center flex-wrap">
+    <img class="relative top-[-7rem] left-[-2.5rem]" src="/images/image 1.png" alt="#">
+    <img class="relative top-[-8rem] left-[4rem] " src="/images/image 2.png" alt="#">
+    <img class="relative top-[-5.9rem] left-[2.2rem]" src="/images/image 3.png" alt="# ">
+    <img class="relative top-[7rem] left-[-7rem]" src="/images/image 4.png" alt="#">
+    <img class="relative left-[7rem] top-[6rem] " src="/images/image 5.png" alt="">
+   <div class="absolute text-center">
+    <div class="flex text-[2.5rem] gap-[1rem] text-primary px-[3rem]">
+        <p>Big Summer</p>
+        <p class="font-bold">Sale</p>
+    </div>
+    <p class="text-second text-[1.1rem] text-center">Commodo fames vitae vitae leo mauris in. Eu consequat.</p>
+    <button class="px-[3rem] my-[1rem] text-primary text-[1.2rem] rounded border-[.1rem] border-primary py-[1rem]">Shop Now</button>
+   </div>
+
+</section>
+<section class="bg-black py-[2rem]">
+    <div class="text-second text-center px-[5rem]">
+        <div class="">
+            <img class="w-[5rem] h-[3rem] mx-[6rem] "  src="/images/Logo1.png" alt="">
+            <p class="py-[1rem]">We are a residential interior design firm located in Portland. Our boutique-studio offers more than</p>
+        </div>
+        <div class="py-[1rem]">
+            <p class="text-primary text-[1rem] ">Services</p>
+            <p>Bonnus program</p>
+            <p>Gift cards</p>
+            <p>Credit and payment</p>
+            <p>Service contracts</p>
+            <p>Non-cash account</p>
+            <p>payment</p>
+        </div>
+        <div>
+            <p class="text-primary text-[1rem] ">Assistance to the buyer</p>
+            <p>Find and order</p>
+            <p>Terms of delivery</p>
+            <p>
+                Exchange and return of goods
+            </p>
+            <p>
+                Guarantee
+            </p>
+            <p>Frequently asked questions</p>
+            <p>Terms of user of the site</p>
+        </div>
+    </div>
+    <div class="text-primary flex justify-around px-[5rem] py-[3rem] text-[1.2rem]">
+        <ion-icon name="logo-twitter"></ion-icon>
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-tiktok"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+    </div>
+</section>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
  <script src="/room/index.js"></script>
